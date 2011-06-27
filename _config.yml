@@ -1,0 +1,10 @@
+markdown    : maruku 
+destination: ./_site
+auto:        false 
+exclude: ["README.md", "README_BoilerPlate.md", "README_jekyll.md", "build", "test"]
+
+owner-name: your name
+owner-page: your homepage
+owner-email: your email
+
+license: your license of choice

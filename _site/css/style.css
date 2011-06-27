@@ -1,0 +1,297 @@
+/**
+ * HTML5 ✰ Boilerplate
+ *
+ * style.css contains a reset, font normalization and some base styles.
+ */
+html, body, body div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after,
+q:before, q:after { content: ""; content: none; }
+ins { background-color: #ff9; color: #000; text-decoration: none; }
+mark { background-color: #ff9; color: #000; font-style: italic; font-weight: bold; }
+del { text-decoration: line-through; }
+abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
+table { border-collapse: collapse; border-spacing: 0; }
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+body { font:16px/1.4 Georgia; *font-size:small; } /* Hack retained to preserve specificity */
+pre, code, kbd, samp { font-family: monospace, sans-serif; }
+
+/* 1) Always force a scrollbar in non-IE
+   2) Remove iOS text size adjust without disabling user zoom: www.456bereastreet.com/archive/201012/controlling_text_size_in_safari_for_ios_without_disabling_user_zoom/ */
+
+body { background: #4f9906 url(../img/bg-brown.gif) repeat-x 0 bottom; }
+html { overflow-y: scroll; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%; }
+
+a:link { -webkit-tap-highlight-color: #FF5E99; }
+
+/* Accessible focus treatment: people.opera.com/patrickl/experiments/keyboard/test */
+a, a:active, a:visited { color: #fffdd8; cursor: pointer; text-decoration: underline; }
+a:hover { color: #fff; text-decoration: none; }
+ol { list-style-type: decimal; }
+
+/* Remove margins for navigation lists */
+nav ul, nav li { margin: 0; list-style:none; list-style-image: none; }
+small { font-size: 85%; }
+b, strong, th { font-weight: bold; }
+td { vertical-align: top; }
+
+/* Set sub, sup without affecting line-height: gist.github.com/413930 */
+sub, sup { font-size: 75%; line-height: 0; position: relative; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+pre {
+  white-space: pre; white-space: pre-wrap; word-wrap: break-word;
+  padding: 15px;
+}
+
+.ie6 legend, .ie7 legend { margin-left: -7px; }
+button, input, select, textarea { width: auto; overflow: visible; margin: 0; font-size: 100%; font-family: sans-serif; vertical-align: baseline; }
+textarea { overflow: auto; vertical-align:text-top; }
+
+/* Hand cursor on clickable input elements */
+label, input[type="button"], input[type="submit"], input[type="image"], button { cursor: pointer; }
+
+/* Remove extra padding and inner border in Firefox */
+input::-moz-focus-inner,
+button::-moz-focus-inner { border: 0; padding: 0; }
+
+/* Colors for form validity */
+input:valid, textarea:valid {  }
+input:invalid, textarea:invalid { border-radius: 1px; -moz-box-shadow: 0px 0px 5px red; -webkit-box-shadow: 0px 0px 5px red; box-shadow: 0px 0px 5px red; }
+.no-boxshadow input:invalid, .no-boxshadow textarea:invalid { background-color: #f0dddd; }
+.ie7 img { -ms-interpolation-mode: bicubic; }
+
+/**
+ * You might tweak these..
+ */
+
+body, select, input, textarea {
+  color: #fffdd8;
+  /* Set your base font here, to apply evenly . font-family: Georgia, serif;  */
+}
+h1, h2, h3, h4, h5, h6 { font-weight: bold; }
+::-moz-selection { background: #fe57a1; color:#fff; text-shadow: none; }
+::selection { background:#fe57a1; color:#fff; text-shadow: none; }
+
+/**
+ * Primary styles
+ *
+ * Author: Anu K. C.
+ * www.sprout-technology.com
+ */
+
+ /*Stripes*/
+nav li a:hover, nav li a:hover span, nav li a.active, nav li a.active span, .sub-nav a.active, .list-desc .bubble, .list-desc-alt .bubble, .status-box, .github, .twitter, .facebook, .flickr, .youtube, .product-digitap, .product-cloud, .product-bizcard{ background: url(../img/stripes.png) no-repeat; }
+.logo{ display: block; text-indent: -9999px; }
+
+.tree{ background: url(../img/bg-tree.png) no-repeat 95px 231px; }
+#container{ margin: 0 auto; width: 960px; }
+/*Header*/
+header{ padding-top: 5px; }
+.logo{ background: url(../img/logo.png) no-repeat; float: left; height: 100px; width: 270px; }
+nav{ float:right; margin: 52px 0 26px; width: 481px; }
+nav li{ float: left; margin-right: 18px; }
+nav li a{ display: block; font-size: 20px; height: 30px; line-height: 30px; padding-left: 10px; text-decoration: none; }
+nav li a span{ display: block; padding-right: 10px; }
+nav li a:hover, nav li a.active, nav li a:hover span, nav li a.active span{ color: #4f9906; }
+nav li a:hover, nav li a.active{ background-position: 0 -82px; }
+nav li a:hover span, nav li a.active span{ background-position: right -112px; }
+
+.sub-nav{ border: solid #72ad38; border-width: 1px 0; margin-top: 16px; overflow: hidden; width: 100%; }
+.sub-nav a{ display: inline-block; font-size: 18px; height: 40px; line-height: 40px; margin-right: 36px; text-decoration: none; }
+.sub-nav a.active{ background-position: 0 -149px; padding-left: 20px; }
+
+#main.inner2{ padding: 60px; }
+#main{ background: url(../img/grass.png) no-repeat 0 bottom; }
+#main.grass{ background: url(../img/grass-home.png) no-repeat 0 bottom; }
+.status-box{background-position: right -466px; display: block; font-family: Trebuchet MS; font-size: 18px; height: 64px; line-height:24px; position: fixed; right:0; padding: 7px 0 0 8px; text-decoration: none; top:45%; width: 92px; }
+.status-box span{ font-size:38px; }
+.main-heading h1{ font-size: 36px; }
+.main-heading h1.big{ font-size: 72px; }
+.main-heading p{ font-size: 18px; }
+.main-heading p i{ font-style: italic; }
+.main-heading.margin{ margin-left: 175px; }
+/*Portfolio: Fruits*/
+.portfolio{ height: 400px; position: relative; }
+.pf-cf, .pf-mt, .pf-panda, .pf-bizcard, .pf-mbm, .pf-ebible, .pf-fmn, .pf-pretzil, .pf-abyss, .pf-mahjong, .pf-catherine, .pf-latejar, .pf-soap{ background:#fffdd8 url(../img/portfolio.png) no-repeat; display: block; text-indent: -9999px; position: absolute; border-radius: 40px; -moz-border-radius: 40px; -webkit-border-radius: 40px;}
+.pf-cf{ background-position: 4px 7px; height: 71px; left: 130px; top: 115px; width: 71px; }
+.pf-mt{ background-position: -90px -5px; height: 53px; left: 205px; top: 168px; width: 53px; }
+.pf-latejar{ background-position: -381px -112px; height: 53px; left: 214px; top: 314px; width: 53px; }
+.pf-panda{ background-position: -177px -1px; height: 51px; left: 297px; top: 290px; width: 51px; }
+.pf-bizcard{ background-position: -266px 8px; height: 71px; left: 438px; top: 236px; width: 71px; }
+.pf-mbm{ background-position: -488px 5px; height: 71px; left: 510px; top: 286px; width: 71px; }
+.pf-ebible{ background-position: -602px -7px; height: 54px; left: 485px; top: 77px; width: 54px; }
+.pf-fmn{ background-position: -385px 2px; height: 53px; left: 352px; top: 108px; width: 53px; }
+.pf-pretzil{ background-position:5px -119px ; height: 44px; left: 702px; top: 115px; width: 44px; }
+.pf-abyss{ background-position: -93px -116px; height: 53px; left: 694px; top: 172px; width: 53px; }
+.pf-soap{ background-position: -507px -118px; height: 44px; left: 648px; top: 237px; width: 44px; }
+.pf-mahjong{ background-position: -181px -115px; height: 53px; left: 753px; top: 249px; width: 53px; }
+.pf-catherine{ background-position: -276px -114px; height: 44px; left: 712px; top: 325px; width: 44px; }
+
+.pf-cf:hover, .pf-mt:hover, .pf-panda:hover, .pf-bizcard:hover, .pf-mbm:hover, .pf-ebible:hover, .pf-fmn:hover, .pf-pretzil:hover, .pf-abyss:hover, .pf-mahjong:hover, .pf-catherine:hover, .pf-latejar:hover, .pf-soap:hover{background-color: #2c5000; }
+
+.content{ margin-top: 75px; }
+.content .services{ float: left; width: 310px; }
+.content .services .left, .content .services .right{ float: left; margin-bottom: 20px; }
+.content .services .left{  width: 60px; }
+.content .services .right{ width: 250px; }
+.content .services .right ul, .content .services .right li{ list-style: none; }
+.content .services .right li{ padding-left: 16px; }
+.content .services .right li.title{ font-size: 18px; font-weight: bold; padding: 0; }
+
+.content .team-box{ float: right; width: 440px; }
+.content .team-box h2{ font-size: 24px; font-weight: normal; }
+.content .team-box img{ float:left; margin-right: 20px; }
+
+.list-desc, .list-desc-alt{ margin-bottom: 50px; position: relative; }
+.list-desc .desc, .list-desc-alt .desc{ width: 500px; }
+.list-desc .desc{ float: left; }
+.list-desc-alt .desc{ float: right; }
+.list-desc .bubble, .list-desc-alt .bubble{ display:block; height: 132px; position: absolute; bottom: 0; width: 110px; }
+.list-desc .bubble { background-position: 0 -192px; right: 290px; }
+.list-desc-alt .bubble { background-position: 0 -328px; left: 290px; }
+
+/*Blog Post*/
+.blog-title{ font-size: 36px; margin-bottom: 25px; }
+.posts, .posts li{ list-style: none; margin: 0; padding: 0; }
+.posts li{ background: url(../img/bullet.png) no-repeat 0 6px; margin-bottom: 25px; padding-left: 24px; }
+.posts li h3{ font-size: 20px; }
+
+footer{ height:335px; padding-top: 35px; }
+.footer-top{ min-height:291px ; position: relative; }
+/*Technology: Roots*/
+.tech-rails, .tech-html5, .tech-mongodb, .tech-jquery, .tech-css3, .tech-haml, .tech-sass, .tech-coffee, .tech-ios, .tech-android, .tech-blackberry{ color: #2c5000; font-family: Trebuchet MS; position: absolute; }
+.tech-rails{ font-size: 30px; left: 502px; top: 34px; }
+.tech-html5{ font-size: 22px; left: 425px; top: 84px; } 
+.tech-mongodb{ font-size: 16px; left: 536px; line-height: 16px; top: 111px; text-align: center; } 
+.tech-jquery{ font-size: 14px; left: 291px; top: 33px; } 
+.tech-css3{ font-size: 14px; left: 583px; top: 75px; } 
+.tech-haml{ font-size: 15px; left: 306px; top: 100px; }
+.tech-sass{ font-size: 15px; left: 317px; top: 151px; } 
+.tech-coffee{ font-size: 11px; left: 486px; line-height: 10px; top: 158px; text-align: center; }
+.tech-ios{ font-size: 18px; left: 379px; top: 54px; }  
+.tech-android{ font-size: 11px; left: 634px; top: 119px; }
+.tech-blackberry{ font-size: 12px; line-height: 12px; left: 675px; top: 75px; }  
+
+.footer-top li{ background: url(../img/separator.png) repeat-y right 0; color: #6c562d; float:left; list-style: none; min-height: 190px; padding-right: 30px; }
+.footer-top li.first{ width: 235px; }
+.footer-top li.first .rails{ margin-top: 16px; }
+.footer-top li.first .rails img{ float: left; margin: 4px 10px 0 0; }
+.footer-top li.second{ padding-left: 40px; width: 133px; }
+.footer-top li.second a{ color: #6c562d; display: block; margin-bottom: 8px; }
+.footer-top li.third{ padding-left: 30px; width: 235px; }
+.footer-top li.third .desc.margin{margin-top: 22px;}
+.footer-top li.third .desc img{ float: left; margin:6px 10px 0 0; }
+.footer-top li.fourth{ background: none; color: #5C3600; padding: 0 0 0 30px; width: 167px; }
+.footer-top li.fourth a{color: #5C3600;}
+
+.footer-bot{ color:#5c3600; padding-top: 8px; }
+.footer-bot .left{ float: left; margin-right: 95px; }
+.github, .twitter, .facebook, .flickr, .youtube{ display: block; float: left; height: 31px; margin-right: 8px; text-indent: -9999px; width: 31px; }
+.github{ background-position: 0 -542px; }
+.twitter{ background-position: -32px -542px; }
+.facebook{ background-position: -64px -542px; }
+.flickr{ background-position: -96px -542px; }
+.youtube{ background-position: -130px -541px; }
+.footer-bot .mid{ float: left; }
+.footer-bot .right{ float: right; }
+.footer-bot .right span{ float: left; }
+.product-digitap, .product-cloud, .product-bizcard{ float:left; height:25px; margin-left: 16px; text-indent: -9999px; }
+.product-digitap{ background-position: 0 -578px; width: 61px; }
+.product-cloud{ background-position: -77px -578px; width: 27px; }
+.product-bizcard{ background-position: -120px -578px; width: 27px; }
+
+.ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.hidden { display: none; visibility: hidden; }
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+.invisible { visibility: hidden; }
+.clearfix:before, .clearfix:after { content: "\0020"; display: block; height: 0; overflow: hidden; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+.center{ text-align: center; }
+
+/**
+ * Non-semantic helper classes: please define your styles before this section.
+ */
+
+/* For image replacement */
+.ir { display: block; text-indent: -999em; overflow: hidden; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.ir br { display: none; }
+
+/* Hide for both screenreaders and browsers */
+.hidden { display: none; visibility: hidden; }
+
+/* Hide only visually, but have it available for screenreaders: by Jon Neal. */
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: drupal.org/node/897638 */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible { visibility: hidden; }
+
+/* The Magnificent Clearfix: Updated to prevent margin-collapsing on child elements in most situations.
+   nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+ /**
+ * Placeholder media queries for responsive design. Modify as design requires.
+ * These follow after, and will override, the primary ('mobile first') styles
+ * The closing /mediaquery comment is required by respond.js min/max-width Media Query polyfill
+ */
+
+@media only screen and (min-width: 480px) {
+  /* Style adjustments for viewports 480px and over go here */
+}
+
+@media only screen and (min-width: 768px) {
+  /* Style adjustments for viewports 768px and over go here */
+}
+ 
+/*Safari & Chrome*/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  .tree{ background-position: 95px 230px; }
+}
+
+/**
+ * Print styles.
+ *
+ * Inlined to avoid required HTTP connection: www.phpied.com/delay-loading-your-print-css/
+ */
+@media print {
+  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important;
+  -ms-filter: none !important; } /* Black prints faster: sanbeiji.com/archives/953 */
+  a, a:visited { color: #444 !important; text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; } /* css-discuss.incutio.com/wiki/Printing_Tables */
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3{ page-break-after: avoid; }
+}
